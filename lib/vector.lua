@@ -202,7 +202,7 @@ end
 
 
 
-local vector = {}
+local vector = { Vec2 = Vec2, Vec3 = Vec3, Vec4 = Vec4 }
 local mt = {
     __call = function(_, ...)
         local n = select("#", ...)
