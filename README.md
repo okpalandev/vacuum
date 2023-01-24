@@ -1,4 +1,4 @@
-# Vacuum
+# Vacuum or LuaVacuum
 # A numerical computation library for building Lua Games.
 ## Introduction
 
