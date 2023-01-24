@@ -14,3 +14,26 @@
 
 
 
+## Installation
+
+### LuaRocks
+```bash
+luarocks install vacuum
+```
+
+### Manual
+```bash
+git clone https://github.com/magicmannna/vacuum
+cd vacuum
+luarocks make
+```
+
+## Usage
+```lua
+local vacuum = require("vacuum")
+```
+
+## Documentation
+[Documentation](https://magicmannna.github.io/vacuum/)
+
+## License - SEE(./LICENSE)[LICENSE] for more information
