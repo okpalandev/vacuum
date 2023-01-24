@@ -1,6 +1,5 @@
-# Vacuum or LuaVacuum
-# A numerical computation library for building Lua Games.
-## Introduction
+# Vacuum
+### A numerical computation library for building Lua Games.
 
 ### Vacuum is inspired by the concepts of vacuums with physics. It is a numerical computation library for Lua. 
 
