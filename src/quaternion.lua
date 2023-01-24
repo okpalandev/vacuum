@@ -1,6 +1,5 @@
-
-local vector= require "vector"
-local Matrix = require "matrix"
+local vector = require("vector")
+local Matrix = require("matrix")
 
 -- destructuring assignment for namespace
 local Vec2, Vec3, Vec4 = vector.Vec2, vector.Vec3, vector.Vec4
@@ -179,3 +178,5 @@ function Quaternion:to_vec4()
     -- Convert a quaternion to a Vec4
     return Vec4:new(self.x, self.y, self.z, self.w)
 end
+
+return Quaternion
