@@ -200,11 +200,7 @@ function Vec4:new(x, y, z, w)
     return o
 end
 
--- local vmt = {
--- { __call = function(_, ...)return Vec2:new(...) end,},
--- { __call = function(_, ...)return Vec3:new(...) end},
--- { __call  = function(_, ...)return Vec4:new(...) end}
--- };
+
 
 local vector = {}
 local mt = {
