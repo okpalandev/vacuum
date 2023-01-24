@@ -1,12 +1,6 @@
-require("lib.matrix");
-require("lib.vector");
-require("lib.quaternion");
+require(".lib.main");
 
-return {
-    Vec2 = vector.Vec2,
-    Vec3 = vector.Vec3,
-    Vec4 = vector.Vec4,
-    Matrix = matrix,
-    Quaternion = quaternion
-};
-
+x0 = vector.vec2:new(1, 2);
+y0 = vector.vec2:new(3, 4);
+z0 = x0 + y0;
+print(z0);

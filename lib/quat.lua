@@ -2,15 +2,15 @@ local vector = require("vector")
 local Matrix = require("matrix")
 
 -- destructuring assignment for namespace
-local Vec2, Vec3, Vec4 = vector.Vec2, vector.Vec3, vector.Vec4
-
+local vec2, vec3, vec4 = vector.vec2, vector.vec3, vector.vec4
+-- Quaternion class
 local Quaternion = {};
 
 
 function Quaternion:new(x, y, z, w)
     -- a Quaternion is a 4D vector
-    -- - inherits from Vec4
-    local o = Vec4:new(x, y, z,w)
+    -- - inherits from vec4
+    local o = vec4:new(x, y, z,w)
     setmetatable(o, self)
     self.__index = self
     return o
@@ -123,7 +123,7 @@ end
 
 function Quaternion:to_axis_angle()
     -- Convert a quaternion to an axis and an angle
-    local axis = Vec3:new(self.x, self.y, self.z)
+    local axis = vec3:new(self.x, self.y, self.z)
     local angle = 2 * math.acos(self.w)
     axis:normalize()
     return axis, angle
@@ -165,18 +165,18 @@ end
 
 
 function Quaternion:to_vec3()
-    -- Convert a quaternion to a Vec3
-    return Vec3:new(self.x, self.y, self.z)
+    -- Convert a quaternion to a vec3
+    return vec3:new(self.x, self.y, self.z)
 end
 
 function Quaternion:to_vec2()
-    -- Convert a quaternion to a Vec2
-    return Vec2:new(self.x, self.y)
+    -- Convert a quaternion to a vec2
+    return vec2:new(self.x, self.y)
 end
 
 function Quaternion:to_vec4()
-    -- Convert a quaternion to a Vec4
-    return Vec4:new(self.x, self.y, self.z, self.w)
+    -- Convert a quaternion to a vec4
+    return vec4:new(self.x, self.y, self.z, self.w)
 end
 
 return Quaternion
