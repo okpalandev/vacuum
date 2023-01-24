@@ -9,7 +9,7 @@ local Quaternion = {};
 
 function Quaternion:new(x, y, z, w)
     -- a Quaternion is a 4D vector
-    -- that inherits from Vec3
+    -- - inherits from Vec4
     local o = Vec4:new(x, y, z,w)
     setmetatable(o, self)
     self.__index = self
