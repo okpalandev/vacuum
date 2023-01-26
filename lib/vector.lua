@@ -210,6 +210,7 @@ end
 
 local vector = { vec2 = vec2, vec3 = vec3, vec4 = vec4 }
 local mt = {
+    -- abstract call method in a metatable
     __call = function(_, ...)
         local n = select("#", ...)
         return vmt[n](...)

@@ -12,9 +12,7 @@ description = {
 build = {
    type = "builtin",
    modules = {
-      main = "lib/main.lua",
-      matrix = "lib/matrix.lua",
-      quat = "lib/quat.lua",
-      vector = "lib/vector.lua"
+      ["vacuum"]="init.lua",
+      
    }
 }
