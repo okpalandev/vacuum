@@ -1,13 +1,13 @@
 package = "vacuum"
-version = "0.0.dev-1"
+version = "dev-1"
 source = {
    url = "git+https://github.com/magicmannna/vacuum.git"
 }
 description = {
-   summary = "### A numerical computation library for building Lua Games.",
-   detailed = "### Vacuum is inspired by the concepts of vacuums with physics. It is a numerical computation library for Lua. ",
+   summary = "### A numerical computation library for building game development in Lua.",
+   detailed = "### A numerical computation library for building game development in Lua.",
    homepage = "https://github.com/magicmannna/vacuum",
-   license = "*** see LICENSE in README file ***"
+   license = "*** please specify a license ***"
 }
 build = {
    type = "builtin",
