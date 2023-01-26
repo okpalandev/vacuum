@@ -188,6 +188,12 @@ function vec3:normalized()
     return vec3:new(self.x / len, self.y / len, self.z / len)
 end
 
+function vec3:normalize_inplace()
+    local len = #self
+    self.x = self.x / len
+    self.y = self.y / len
+    self.z = self.z / len
+end
 
 local vec4 = {}
 
