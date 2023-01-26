@@ -32,6 +32,9 @@ local vec2 = require("vacuum.vector.vec2")
 local v1 = vec2:new(1,2)
 local v2 = vec2:new(3,4)
 
+ ["vacuum.matrix"]="lib.matrix.lua",
+      ["vacuum.vector"]="lib.vector.lua",
+      ["vacuum.quaternion"]="lib.quat.lua"
 local v3 = v1 + v2
 print(v3.x,v3.y) -- 4 6
 
