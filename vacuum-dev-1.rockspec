@@ -12,7 +12,7 @@ description = {
 build = {
    type = "builtin",
    modules = {
-      ["vacuum"]="init.lua",
+      ["vacuum"]="vacuum.lua",
 
    }
 }
