@@ -1,46 +1,59 @@
 # Vacuum
 
-### A numerical computation library for  gmae development.
+## Overview
 
-### Desgined for building games ,vacuum.lua is a numerical computation library for Lua.It is designed to be a lightweight library to be  for physics manipulation within game development.
-
-### Vacuum is inspired by the concepts of vacuums within physics.
+Vacuum is a lightweight numerical computation library for Lua, designed specifically for game development. It provides essential tools for manipulating vectors, matrices, and quaternions, making it ideal for handling physics within game environments. Inspired by concepts from physics, Vacuum aims to simplify complex mathematical operations commonly encountered in game development.
 
 ## Features
-1) Vector(2D,3D,4D) for vector manipulation
-2) Matrix(2D,3D,4D) for linear algebra
-3) Quaternion for 3D rotation
 
+- **Vectors**: Supports 2D, 3D, and 4D vectors for efficient manipulation and calculations.
+- **Matrices**: Provides functionality for 2D, 3D, and 4D matrices, facilitating linear algebra operations.
+- **Quaternions**: Offers support for 3D rotations using quaternions, a crucial component for orientation in 3D space.
 
 ## Installation
 
-### LuaRocks
-```bash
-luarocks install vacuum
-```
+### Using LuaRocks
 
-### Manual
-```bash
-git clone https://github.com/okpalandev/vacuum
-cd vacuum
-luarocks make
-```
+bash
+luarocks install vacuum
+
+
+### Manual Installation
+
+1. Clone the repository:
+
+    bash
+    git clone https://github.com/okpalandev/vacuum
+    
+
+2. Navigate to the cloned directory:
+
+    bash
+    cd vacuum
+    
+
+3. Install using LuaRocks:
+
+    bash
+    luarocks make
+    
 
 ## Usage
-```lua
+
+lua
 local vec2 = require("vacuum.vector.vec2")
-local v1 = vec2:new(1,2)
-local v2 = vec2:new(3,4)
 
- ["vacuum.matrix"]="lib.matrix.lua",
-      ["vacuum.vector"]="lib.vector.lua",
-      ["vacuum.quaternion"]="lib.quat.lua"
+local v1 = vec2:new(1, 2)
+local v2 = vec2:new(3, 4)
+
 local v3 = v1 + v2
-print(v3.x,v3.y) -- 4 6
+print(v3.x, v3.y) -- Output: 4 6
 
-```
 
 ## Documentation
-[Documentation](https://okpalandev.github.io/vacuum/)
 
-## License - SEE(./LICENSE)[LICENSE] for more information
+For detailed documentation, please refer to the [Vacuum Documentation](https://okpalandev.github.io/vacuum/).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
