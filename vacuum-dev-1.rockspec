@@ -8,7 +8,7 @@ description = {
    detailed = "",
    homepage = "https://github.com/okpalandev/vacuum",
    license = "MIT"
-},
+}
 build = {
    type = "builtin",
    modules = {
