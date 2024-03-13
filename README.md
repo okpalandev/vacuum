@@ -28,15 +28,15 @@ luarocks install vacuum
 
 2. Navigate to the cloned directory:
 
-    bash
+    ```bash 
     cd vacuum
-    
+    ```
 
 3. Install using LuaRocks:
 
-    bash
+    ```bash
     luarocks make
-    
+    ```
 
 ## Usage
 
