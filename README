@@ -21,7 +21,7 @@ luarocks install vacuum
 
 ### Manual
 ```bash
-git clone https://github.com/magicmannna/vacuum
+git clone https://github.com/okpalandev/vacuum
 cd vacuum
 luarocks make
 ```
@@ -41,6 +41,6 @@ print(v3.x,v3.y) -- 4 6
 ```
 
 ## Documentation
-[Documentation](https://magicmannna.github.io/vacuum/)
+[Documentation](https://okpalandev.github.io/vacuum/)
 
 ## License - SEE(./LICENSE)[LICENSE] for more information
