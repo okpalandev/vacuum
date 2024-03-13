@@ -1,18 +1,22 @@
 package = "vacuum"
 version = "dev-1"
 source = {
-   url = "https://github.com/okpalandev/vacuum.git"
+   url = "git://github.com/okpalandev/vacuum.git"
 }
 description = {
-   summary = " A numerical computation library for building game development in Lua.",
-   detailed = "A numerical computation library for building game development in Lua.",
+   summary = "A numerical computation library for building Lua games.",
+   detailed = "A numerical computation library for building Lua games.",
    homepage = "https://github.com/okpalandev/vacuum",
-   license = "*** see license in README file. ***"
+   license = "MIT"
+}
+dependencies = {
 }
 build = {
    type = "builtin",
    modules = {
-      ["vacuum"]="vacuum.lua",
-
+      ["vacuum.main"] = "lib/main.lua",
+      ["vacuum.matrix"] = "lib/matrix.lua",
+      ["vacuum.quat"] = "lib/quat.lua",
+      ["vacuum.vector"] = "lib/vector.lua"
    }
 }
