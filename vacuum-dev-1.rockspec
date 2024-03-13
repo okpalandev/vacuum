@@ -1,11 +1,11 @@
 package = "vacuum"
 version = "dev-1"
 source = {
-   url = "git://github.com/okpalandev/vacuum.git"
+   url = "https://github.com/okpalandev/vacuum.git"
 }
 description = {
    summary = "A numerical computation library for building Lua games.",
-   detailed = "A numerical computation library for building Lua games.",
+   detailed = "",
    homepage = "https://github.com/okpalandev/vacuum",
    license = "MIT"
 }
