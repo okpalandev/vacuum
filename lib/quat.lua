@@ -6,7 +6,6 @@ local vec2, vec3, vec4 = vector.vec2, vector.vec3, vector.vec4
 -- Quaternion class
 local Quaternion = {};
 
-
 function Quaternion:new(x, y, z, w)
     -- a Quaternion is a 4D vector
     -- - inherits from vec4
