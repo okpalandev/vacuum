@@ -4,5 +4,5 @@ return {
     matrix = require('matrix'),
     vector = require('vector') ,
     quaternion = require('quat'),
-    main = require('main'),
+    -- main = require('main'),
 };
